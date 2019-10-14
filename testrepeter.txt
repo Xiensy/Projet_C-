@@ -1,0 +1,23 @@
+#test repeter
+
+procedure principale()
+
+#test repeter 1
+
+    test1 = 0 ;
+    repeter
+        test1 = test1 + 1;
+    jusqua (test1==5) ;
+    testRepeter = (test1 == 5);
+
+#resultat attendu testRepeter=1
+
+    test2 = 0 ;
+    repeter
+        test1 = test1 + 1;
+    jusqua (test2==0) ;
+    testRepeter2 = (test2 == 0);
+
+#resultat attendu testRepeter2=1
+
+finproc

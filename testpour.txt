@@ -1,0 +1,33 @@
+#test pour
+#resultat attendus 
+#testsPour1 =4
+#testsPour2 =4
+#testsPour3 =1
+#testsPour4 =5
+
+procedure principale()
+testsPour1=0;
+pour (test1=0;test1<5;test1=test1+1)
+    testsPour1=test1;
+finpour
+
+
+testsPour2=0;
+test2=0;
+pour (;test2<5;test2=test2+1)
+    testsPour2=test2;
+finpour
+
+
+pour (test3=0;test3<5;)
+    test3=test3+1;
+finpour
+testsPour3 = (test3 == 5);
+
+
+testsPour4=0;
+pour (;testsPour4<5;)
+    testsPour4=testsPour4+1;
+finpour
+
+finproc

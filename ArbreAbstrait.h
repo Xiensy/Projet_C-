@@ -131,11 +131,41 @@ public:
     virtual ~NoeudInstSiRiche(){};
 };
 
+////////////////////////////////////////////////////////////////////////////////
+class NoeudInstRepeter : public Noeud{
+private:
+    Noeud* m_condition;
+    Noeud* m_sequence;
+    
+public :
+    NoeudInstRepeter(Noeud* condition,Noeud* sequence);
+    int executer() override;    
+    virtual ~NoeudInstRepeter(){};
+};
 
+////////////////////////////////////////////////////////////////////////////////
+class NoeudInstPour : public Noeud{
+private:
+    Noeud* m_condition;
+    Noeud* m_sequence;
+    Noeud* m_affectation1;
+    Noeud* m_affectation2;
+public :
+    NoeudInstPour(Noeud* affectation1,Noeud* condition,Noeud* affectation2,Noeud* sequence);
+    int executer() override;    
+    virtual ~NoeudInstPour(){};
+};
 
-
-
-
+////////////////////////////////////////////////////////////////////////////////
+class NoeudInstEcrire : public Noeud{
+private:
+    Noeud* m_exprouchaine;
+    
+public:
+    NoeudInstEcrire(Noeud* exprouchaine);
+    int executer() override;
+    virtual ~NoeudInstEcrire(){};
+};
 
 
 

@@ -114,3 +114,37 @@ int NoeudInstSiRiche::executer() {
         m_sequences[m_sequences.size() - 1]->executer();
     }
 }
+
+////////////////////////////////////////////////////////////////////////////////
+// NoeudInstRepeter
+////////////////////////////////////////////////////////////////////////////////
+
+NoeudInstRepeter::NoeudInstRepeter(Noeud* condition, Noeud* sequence)
+: m_condition(condition), m_sequence(sequence) {
+}
+
+int NoeudInstRepeter::executer() {
+    while (!(m_condition->executer())) {
+        m_sequence->executer();
+    }
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// NoeudInstRepeter
+////////////////////////////////////////////////////////////////////////////////
+
+NoeudInstPour::NoeudInstPour(Noeud* affectation1, Noeud* condition, Noeud* affectation2, Noeud* sequence)
+: m_affectation1(affectation1), m_affectation2(affectation2),
+m_condition(condition), m_sequence(sequence) {
+}
+
+int NoeudInstPour::executer() {
+    for(m_affectation1!=nullptr?m_affectation1->executer():0;m_condition->executer();m_affectation2!=nullptr?m_affectation2->executer():0){
+        m_sequence->executer();
+    }
+
+}
+
+
+
