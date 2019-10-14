@@ -1,0 +1,21 @@
+# Test du tantque
+
+procedure principale()
+
+#test1
+
+    test1=0 ;
+    tantque(test1 < 2)
+        test1 = test1 + 1 ;
+    fintantque
+    testTantQue1 = (test1==2) ;
+
+#test2
+
+    test2 = 1 ;
+    tantque(test2 == 0)
+        test2 = 0 ;
+    fintantque
+    testTantQue2 = (test2 == 1) ;
+
+finproc
