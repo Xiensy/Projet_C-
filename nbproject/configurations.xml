@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>ArbreAbstrait.h</itemPath>
+      <itemPath>Exceptions.h</itemPath>
+      <itemPath>Interpreteur.h</itemPath>
+      <itemPath>Lecteur.h</itemPath>
+      <itemPath>Symbole.h</itemPath>
+      <itemPath>SymboleValue.h</itemPath>
+      <itemPath>TableSymboles.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>motsCles.txt</itemPath>
+      <itemPath>programme.txt</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>ArbreAbstrait.cpp</itemPath>
+      <itemPath>Interpreteur.cpp</itemPath>
+      <itemPath>Lecteur.cpp</itemPath>
+      <itemPath>Symbole.cpp</itemPath>
+      <itemPath>SymboleValue.cpp</itemPath>
+      <itemPath>TableSymboles.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>testecrire.txt</itemPath>
+    <itemPath>testpour.txt</itemPath>
+    <itemPath>testrepeter.txt</itemPath>
+    <itemPath>testsiriche.txt</itemPath>
+    <itemPath>testtantque.txt</itemPath>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <commandLine>-lcppunit</commandLine>
+        </ccTool>
+      </compileType>
+      <item path="ArbreAbstrait.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ArbreAbstrait.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exceptions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interpreteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Interpreteur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Lecteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Lecteur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Symbole.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Symbole.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SymboleValue.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SymboleValue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TableSymboles.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TableSymboles.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="motsCles.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="programme.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testecrire.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testpour.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testrepeter.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testsiriche.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testtantque.txt" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="ArbreAbstrait.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ArbreAbstrait.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exceptions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interpreteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Interpreteur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Lecteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Lecteur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Symbole.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Symbole.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SymboleValue.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SymboleValue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TableSymboles.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TableSymboles.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="motsCles.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="programme.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testecrire.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testpour.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testrepeter.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testsiriche.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="testtantque.txt" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
