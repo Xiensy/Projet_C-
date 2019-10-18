@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=m3105-tp5
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/m3105-tp5
+CND_ARTIFACT_NAME_Debug=projet_c-
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/projet_c-
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=m3105-tp5.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/m3105-tp5.tar
+CND_PACKAGE_NAME_Debug=projetc-.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/projetc-.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=m3105-tp5
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/m3105-tp5
+CND_ARTIFACT_NAME_Release=projet_c-
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/projet_c-
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=m3105-tp5.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/m3105-tp5.tar
+CND_PACKAGE_NAME_Release=projetc-.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/projetc-.tar
 #
 # include compiler specific variables
 #

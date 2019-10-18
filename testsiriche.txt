@@ -7,7 +7,7 @@ procedure principale()
     si ( 1 )
         test1 = 1;
     finsi
-    testSiSimple = (test1 == 1);
+    testSiSimpleVRAI = test1;
 
 #test si simple 2
 
@@ -15,21 +15,21 @@ procedure principale()
     si ( 0 )
         test2 = 0 ;
     finsi
-    testSiSimple2 = (test2 == 1);
+    testSiSimpleFAUX = test2;
 
 #test si riche
-
-    test3 = 0;
+    test3= 0;
+    testERREUR = 1;
     si ( 0 )
-        test3 = 2;
+        testERREUR = 1;
     sinonsi ( 0 )
-        test3 = 3;
+        testERREUR = 2;
     sinonsi ( 1 )
         test3 = 1;
     sinon
-        test3 = 4;
+        testERREUR = 3;
     finsi
-    testSiRiche1 = (test3 == 1);
+    testSinonSi1 = test3;
 
 #test sinon
 

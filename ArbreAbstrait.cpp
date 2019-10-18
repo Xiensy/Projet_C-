@@ -92,6 +92,7 @@ int NoeudInstTantque::executer() {
     while (m_condition->executer()) {
         m_sequence->executer();
     }
+    return 0; // La valeur renvoyée ne représente rien !
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -104,15 +105,18 @@ NoeudInstSiRiche::NoeudInstSiRiche(std::vector<Noeud*> conditions, std::vector<N
 
 int NoeudInstSiRiche::executer() {
     bool sinon = (m_conditions.size() != m_sequences.size());
-    for (int i = 0; i < m_conditions.size() - 1; i++) {
+    bool siExecuter = false;
+    for (int i = 0; i < m_conditions.size() && !siExecuter; i++) {
         if (m_conditions[i]->executer()) {
             m_sequences[i]->executer();
-            sinon = 0;
+            sinon = false;
+            siExecuter = true;
         }
     }
-    if (sinon) {
+    if (sinon && !siExecuter) {
         m_sequences[m_sequences.size() - 1]->executer();
     }
+    return 0; // La valeur renvoyée ne représente rien !
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -127,7 +131,7 @@ int NoeudInstRepeter::executer() {
     while (!(m_condition->executer())) {
         m_sequence->executer();
     }
-
+    return 0; // La valeur renvoyée ne représente rien !
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -143,7 +147,7 @@ int NoeudInstPour::executer() {
     for(m_affectation1!=nullptr?m_affectation1->executer():0;m_condition->executer();m_affectation2!=nullptr?m_affectation2->executer():0){
         m_sequence->executer();
     }
-
+    return 0; // La valeur renvoyée ne représente rien !
 }
 
 
